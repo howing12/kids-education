@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { site } from "@/lib/data";
+import { site, BASE_PATH } from "@/lib/data";
 
 const LINKS = [
   { href: "#about", label: "關於我們" },
@@ -21,7 +21,7 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src={`${BASE_PATH}/logo.png`}
             alt={site.name}
             className="h-10 w-10 rounded-lg object-contain"
           />

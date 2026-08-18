@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import { site } from "@/lib/data";
+import { site, BASE_PATH } from "@/lib/data";
 
 export function Hero() {
   return (
@@ -11,7 +11,7 @@ export function Hero() {
         <div className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-2xl bg-background shadow-sm">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src={`${BASE_PATH}/logo.png`}
             alt={site.name}
             className="h-full w-full object-contain"
           />

@@ -1,4 +1,4 @@
-import { site } from "@/lib/data";
+import { site, BASE_PATH } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src={`${BASE_PATH}/logo.png`}
             alt={site.name}
             className="h-10 w-10 rounded-lg object-contain"
           />

@@ -16,6 +16,8 @@ export type Teacher = {
   bio: string;
 };
 
+export const BASE_PATH = "/kids-education";
+
 export const site = {
   name: "Johnny Education Centre",
   nameEn: "Johnny Education Centre",
@@ -56,7 +58,7 @@ export const courses: Course[] = [
   {
     id: "ai",
     name: "AI 小小探索班",
-    image: "/courses/ai.png",
+    image: `${BASE_PATH}/courses/ai.png`,
     description:
       "透過簡單有趣的例子，讓孩子認識人工智能，學習如何用 AI 工具幫助學習及創作，例如生成故事、圖片等。",
     fee: "HKD 1,100 / 4堂",
@@ -66,7 +68,7 @@ export const courses: Course[] = [
   {
     id: "python",
     name: "兒童 Python 啟蒙班",
-    image: "/courses/python.png",
+    image: `${BASE_PATH}/courses/python.png`,
     description:
       "以遊戲及圖像方式教授編程概念，培養邏輯思維與解難能力，適合零基礎小朋友。",
     fee: "HKD 1,300 / 4堂",
@@ -76,7 +78,7 @@ export const courses: Course[] = [
   {
     id: "allsubjects",
     name: "小學全科提升班",
-    image: "/courses/allsubjects.png",
+    image: `${BASE_PATH}/courses/allsubjects.png`,
     description:
       "針對中文、英文及數學基礎，透過練習與講解，幫助學生打好基礎及提升成績。",
     fee: "HKD 900 / 4堂",
@@ -86,7 +88,7 @@ export const courses: Course[] = [
   {
     id: "arts",
     name: "創意繪畫小達人班",
-    image: "/courses/arts.png",
+    image: `${BASE_PATH}/courses/arts.png`,
     description:
       "小朋友拾起畫筆，創作圖畫、簡報及小故事，提升創意與表達能力。",
     fee: "HKD 1,200 / 4堂",
